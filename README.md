@@ -5,6 +5,16 @@
 
 ---
 
+### 데이터셋 출처 및 모델 정보
+이 프로젝트에 사용된 YOLOv8 모델은 Ultralytics에서 제공하는 사전 학습 모델(yolov8n.pt)을 기반으로 학습되었습니다. 학습 데이터셋은 Roboflow에서 제공하는 "Fish-breeds" 데이터셋이며, 라이선스(CC BY 4.0)에 따라 자유롭게 사용이 가능합니다.
+
+- YOLOv8 모델: [Ultralytics 공식 홈페이지](https://ultralytics.com)
+
+- Fish-breeds 데이터셋: [Roboflow Universe](https://universe.roboflow.com/licenta-ldbud/fish-breeds-aeg36/dataset/9)
+
+
+---
+
 ## 설치 및 환경 설정
 프로젝트를 실행하려면 다음 패키지들을 설치해야 합니다.
 
