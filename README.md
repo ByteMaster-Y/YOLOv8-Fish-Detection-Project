@@ -47,21 +47,21 @@ YOLOv8 모델을 학습시키는 방법은 두 가지가 있습니다: CLI(명�
 
 ### Python API로 학습
 
-#### 파이썬 API로 실행 epoch15 테스트
+#### 파이썬 API로 실행 default(epoch15) 테스트
 ```
 >>> python
 >>> model = YOLO(r"C:\Users\User\your_url\yolov8n.pt")
 >>> result = model.train(data=r"C:\Users\User\your_url\data.yaml", epochs=15)
 ```
 
-#### epochs=30 batch=16 테스트
+#### scratch(epochs=30 batch=16) 테스트
 ```
 >>> python
 >>> model = YOLO(r"C:\Users\User\your_url\yolov8n.pt")
 >>> result = model.train(data='data.yaml', epochs=30, batch=16)
 ```
 
-#### epochs=30 freeze=10 batch=16 테스트
+#### freeze(epochs=30 freeze=10 batch=16) 테스트
 ```
 >>> python
 >>> model = YOLO(r"C:\Users\User\your_url\yolov8n.pt")
