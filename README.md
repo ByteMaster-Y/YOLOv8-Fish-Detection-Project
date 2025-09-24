@@ -46,23 +46,23 @@ Roboflow URL: https://universe.roboflow.com/licenta-ldbud/fish-breeds-aeg36/data
 YOLOv8 모델을 학습시키는 방법은 두 가지가 있습니다: CLI(명령어 창) 방식과 Python API 방식.
 
 ### Python API로 학습
-```
+
 #### 파이썬 API로 실행 epoch15 테스트
+```
 >>> python
 >>> model = YOLO(r"C:\Users\User\your_url\yolov8n.pt")
 >>> result = model.train(data=r"C:\Users\User\your_url\data.yaml", epochs=15)
 ```
 
-```
 #### epochs=30 batch=16 테스트
+```
 >>> python
 >>> model = YOLO(r"C:\Users\User\your_url\yolov8n.pt")
 >>> result = model.train(data='data.yaml', epochs=30, batch=16)
 ```
 
-
-```
 #### epochs=30 freeze=10 batch=16 테스트
+```
 >>> python
 >>> model = YOLO(r"C:\Users\User\your_url\yolov8n.pt")
 >>> result = model.train(data=r"C:\Users\User\your_url\data.yaml", epochs=30, freeze=10, batch=16)
@@ -76,26 +76,29 @@ YOLOv8 모델을 학습시키는 방법은 두 가지가 있습니다: CLI(명�
 ### 1. 이미지 또는 폴더에 대한 추론
 
 ```
-# 학습된 모델 로드(필자는 13, 15, 17에 각각 학습시켰던 결과가 runs파일안에 있었음)
+- 1. 학습된 모델 로드(필자는 13, 15, 17에 각각 학습시켰던 결과가 runs파일안에 있었음)
 >>> model = YOLO(r"C:/Users/User/runs/detect/train15/weights/best.pt")
 
-# 이미지 폴더에 대한 예측 수행 및 결과 저장
+- 2. 이미지 폴더에 대한 예측 수행 및 결과 저장
 >>> results = model.predict(source=r"C:/Users/User/your_url/Fish-breeds/test/images", save=True, conf=0.25) # 임계점 0.25
 
-# 3. 결과 하나 확인
+- 3. 결과 하나 확인
 >>> results[0].show()
+
+- 여러개 확인하고 싶을 시 for문 사용
+
 ```
 
 ### 2. 동영상 파일에 대한 추론
 
 ```
-# 학습된 모델 로드
+- 학습된 모델 로드
 >>> model = YOLO(r"C:/Users/User/runs/detect/train15/weights/best.pt")
 
-# 비디오 파일 경로
+- 비디오 파일 경로
 >>> video_path = r"C:\Users\User\your_url\test_video\fish2.mp4"
 
-# 비디오에 대한 예측 수행 및 결과 저장
+- 비디오에 대한 예측 수행 및 결과 저장
 >>> results = model.predict(source=video_path, save=True, conf=0.25)
 
 ```
