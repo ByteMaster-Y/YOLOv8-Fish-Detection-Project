@@ -68,6 +68,8 @@ YOLOv8 모델을 학습시키는 방법은 두 가지가 있습니다: CLI(명�
 >>> result = model.train(data=r"C:\Users\User\your_url\data.yaml", epochs=30, freeze=10, batch=16)
 ```
 
+<img width="2245" height="1604" alt="Image" src="https://github.com/user-attachments/assets/91d58423-e695-4bc5-bc8f-786d48c27ce3" />
+
 ---
 
 ## 모델 추론 및 사용
