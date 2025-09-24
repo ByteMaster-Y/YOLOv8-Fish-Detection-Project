@@ -68,10 +68,10 @@ YOLOv8 모델을 학습시키는 방법은 두 가지가 있습니다: CLI(명�
 >>> result = model.train(data=r"C:\Users\User\your_url\data.yaml", epochs=30, freeze=10, batch=16)
 ```
 
-- 3개 데이터 모델 결과
+### 3개 데이터 모델 결과
 <img width="2245" height="1604" alt="Image" src="https://github.com/user-attachments/assets/91d58423-e695-4bc5-bc8f-786d48c27ce3" />
 
-- 마지막 freeze 테스트 혼동행렬
+### 마지막 freeze 테스트 혼동행렬
 <img width="3000" height="2250" alt="Image" src="https://github.com/user-attachments/assets/8facdcab-bf2f-4641-9249-9f6af8472fe4" />
 
 ---
