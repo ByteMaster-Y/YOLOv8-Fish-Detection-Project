@@ -1,7 +1,7 @@
 # YOLOv8-Fish-Detection-Project
 
 ## 프로젝트 개요
-이 프로젝트는 YOLOv8 모델을 활용하여 다양한 종류의 물고기를 탐지하고 분류하는 방법을 보여줍니다. 학습된 모델은 이미지와 동영상에서 7가지 종류의 물고기(blue-tang, butterflyfish, clownfish, moorish-idol, neon-tetra, ribboned-sweetlips, yellow-tang)를 실시간으로 식별하고 경계 상자(bounding box)를 그립니다. 이 문서는 모델 학습부터 실제 사용까지의 과정을 안내합니다.
+이 프로젝트는 YOLOv8 모델을 활용하여 다양한(7가지) 종류의 물고기를 탐지하고 분류하는 방법을 보여줍니다. 학습된 모델은 이미지와 동영상에서 7가지 종류의 물고기(blue-tang, butterflyfish, clownfish, moorish-idol, neon-tetra, ribboned-sweetlips, yellow-tang)를 실시간으로 식별하고 경계 상자(bounding box)를 그립니다. 이 문서는 모델 학습부터 실제 사용까지의 과정을 안내합니다.
 
 ---
 
